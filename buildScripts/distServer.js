@@ -14,14 +14,6 @@ app.get('/', function(reg, res){
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.get('/users', function(reg, res) {
-    // dard coding for simplicity, Pretend this hits a real database
-    res.json([
-      {"id": 1,"firstName": "Bob", "lastName":"Smith", "email": "bob@gmail.com" },
-      {"id": 2,"firstName": "Tammy", "lastName":"Norton", "email": "norton@gmail.com" },
-      {"id": 3,"firstName": "Tina", "lastName":"Lee", "email": "lee.tina@yahoo.com" }
-    ]);
-  });
 
 
 app.listen(port, function(err){
