@@ -1,10 +1,11 @@
 import './index.css';
 import {getUsers} from './api/userApi';
-import express from 'express';
-import cors from 'cors';
 
-const app = express();
-app.use(cors());
+// var express = require('express');
+// var cors =require('cors');
+
+// const app = express();
+// app.use(cors());
 
 // Populate table of users via API call.
 getUsers().then(result => {
