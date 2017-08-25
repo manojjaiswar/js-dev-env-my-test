@@ -1,0 +1,8 @@
+var expect = require ('chai'); // pass message
+
+// describe pass test
+describe('Our first test', () => {
+    it('should pass', () => {
+      expect(true).to.equal(true);
+    });
+  });
